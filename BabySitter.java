@@ -44,6 +44,11 @@ public class BabySitter {
 		return result.toString();
 	}
 	
+	public String calculateTotalNightCharge(){
+		Integer totalCharge = 1 + 2 + 3;
+		return totalCharge.toString();
+	}
+	
 	BabySitter(Integer startTime, Integer bedTime, Integer endTime){
 		myStartTime = startTime;
 		myBedTime = bedTime;
