@@ -18,8 +18,8 @@ public class BabySitterTestCase {
 	
 	@Test
 	public void WhenBabySitterIsgivenanEndTimeofThreeItReturnsThatThree() {
-		BabySitter babySitter = new BabySitter(1, 2, 0);
+		BabySitter babySitter = new BabySitter(1, 2, 3);
 		assertEquals("3", babySitter.getEndTime());
 	}
-
+	
 }
