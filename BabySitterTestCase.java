@@ -22,4 +22,11 @@ public class BabySitterTestCase {
 		assertEquals("3", babySitter.getEndTime());
 	}
 	
+
+	@Test
+	public void CalculatedHoursBetweenStartTimeOf5AndBedTimeOf10AndGot5() {
+		BabySitter babySitter = new BabySitter(5, 10, 0);
+		assertEquals("5", babySitter.calculateHoursFromStartToBedTime());
+	}
+	
 }
