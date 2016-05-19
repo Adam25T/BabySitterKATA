@@ -23,6 +23,11 @@ public class BabySitter {
 		
 		return result.toString();
 	}
+	            
+	public String calculateHoursFromBedTimeToMidnight(){
+		Integer result = 12 - myBedTime;
+		return result.toString();
+	}
 	
 	BabySitter(Integer startTime, Integer bedTime, Integer endTime){
 		myStartTime = startTime;
