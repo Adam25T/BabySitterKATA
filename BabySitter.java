@@ -19,6 +19,7 @@ public class BabySitter {
 		Integer result = myBedTime - myStartTime;
 		return result.toString();
 	}
+	
 	BabySitter(Integer startTime, Integer bedTime, Integer endTime){
 		myStartTime = startTime;
 		myBedTime = bedTime;
