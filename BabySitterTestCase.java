@@ -15,5 +15,11 @@ public class BabySitterTestCase {
 		BabySitter babySitter = new BabySitter(1, 2, 0);
 		assertEquals("2", babySitter.getBedTime());
 	}
+	
+	@Test
+	public void WhenBabySitterIsgivenanEndTimeofThreeItReturnsThatThree() {
+		BabySitter babySitter = new BabySitter(1, 2, 0);
+		assertEquals("3", babySitter.getEndTime());
+	}
 
 }
