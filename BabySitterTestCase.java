@@ -46,4 +46,10 @@ public class BabySitterTestCase {
 		BabySitter babySitter = new BabySitter(13, 10, 0);
 		assertEquals("0", babySitter.calculateHoursFromBedTimeToMidnight());
 	}
+	
+	@Test
+	public void CalculateHoursBetweenMidnightAndEndTimeOf16ToGet4() {
+		BabySitter babySitter = new BabySitter(0, 0, 16);
+		assertEquals("4", babySitter.calculateHoursFromMidnighToEndTime());
+	}
 }
