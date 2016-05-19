@@ -50,6 +50,6 @@ public class BabySitterTestCase {
 	@Test
 	public void CalculateHoursBetweenMidnightAndEndTimeOf16ToGet4() {
 		BabySitter babySitter = new BabySitter(0, 0, 16);
-		assertEquals("4", babySitter.calculateHoursFromMidnighToEndTime());
+		assertEquals("4", babySitter.calculateHoursFromMidnightToEndTime());
 	}
 }
