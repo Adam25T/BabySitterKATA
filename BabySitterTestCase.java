@@ -61,7 +61,13 @@ public class BabySitterTestCase {
 	
 	@Test
 	public void CalculateTotalHoursWithIntsOnePlusTwoPlusThreeToEqaulSix() {
-		BabySitter babySitter = new BabySitter(0, 0, 0);
-		assertEquals("6", babySitter.calculateTotalNightCharge());
+		BabySitter babySitter = new BabySitter(9, 7, 15);
+		assertEquals("72", babySitter.calculateTotalNightCharge());
+	}
+	
+	@Test 
+	public void CalculateTotalHoursWithOtherMethodsToReplaceTo(){
+		BabySitter babySitter = new BabySitter(5, 10, 16);
+		assertEquals("140", babySitter.calculateTotalNightCharge());
 	}
 }
