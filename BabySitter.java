@@ -25,7 +25,12 @@ public class BabySitter {
 	}
 	            
 	public String calculateHoursFromBedTimeToMidnight(){
-		Integer result = 12 - myBedTime;
+		Integer result= 0;
+		Integer temp = myBedTime;
+		if(myBedTime < myStartTime)
+			temp = myStartTime;
+		if(temp < 12)
+			result = 12 - temp;
 		return result.toString();
 	}
 	
