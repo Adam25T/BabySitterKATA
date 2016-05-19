@@ -16,7 +16,11 @@ public class BabySitter {
 	
 	
 	public String calculateHoursFromStartToBedTime() {
-		Integer result = myBedTime - myStartTime;
+		Integer result = 0;
+		
+		if(myStartTime < myBedTime)
+			result = myBedTime - myStartTime;
+		
 		return result.toString();
 	}
 	
